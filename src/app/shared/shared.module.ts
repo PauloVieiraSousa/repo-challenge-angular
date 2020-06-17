@@ -6,10 +6,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { ProductComponent } from './components/product/product.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, ShoppingCartComponent],
+  declarations: [HeaderComponent, ShoppingCartComponent, ProductComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -20,7 +21,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
     BrowserModule,
     ReactiveFormsModule,
     HeaderComponent,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ShoppingCartComponent,
+    ProductComponent
   ]
 })
 export class SharedModule { 
